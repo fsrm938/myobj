@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*匹配父元素中只有一个子元素*/
+        ul li:only-child{
+            color: red;
+        }
+        
+        .mydiv p:only-child{
+            color: blue;
+        }
+        /*匹配父级中唯一的子元素，如整个文档只有一个p元素*/
+        .mydiv p:only-of-type{
+            color: yellow;
+        }
+        /*匹配没有内容和子节点的元素*/
+        div:empty{
+            width: 194px;
+            height: 40px;
+            background-image: url(img/topfoot-spr.png);
+            background-position: -219px 0;
+        }
+        /*匹配文档的根元素*/
+        :root{
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>列表标签1</li>
+        <li>列表标签2</li>
+        <li>列表标签3</li>
+        <li>列表标签4</li>
+        <li>列表标签5</li>
+        <li>
+            <ul>
+                <li>我是嵌套的li1</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="mydiv">
+        <p>我是p</p>
+        <span>我是span</span>
+        <!-- <p>我是p2</p> -->
+    </div>
+    <div></div>
+</body>
+</html>

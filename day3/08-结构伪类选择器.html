@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结构伪类选择器</title>
+    <style>
+        /* p标签，且为父元素的第一个子元素 */
+        p:first-child{
+            color: red;
+        }
+        .myul1 li:first-child{
+            text-decoration: underline;
+        }
+
+        /*p标签，且为父元素的最后一个子元素*/
+        p:last-child{
+            color: blue;
+        }
+        .myul1>li:last-child{
+            font-weight: bold;
+        }
+        /*p标签，且为父元素的第四个子元素*/
+        p:nth-child(4){
+            font-size: 30px;
+        }
+        .myul1 li:nth-child(3){
+            font-style: italic;
+        }
+        /* 选中奇数行li标签 */
+        .myul1 li:nth-child(2n-1){
+            background-color: #ccc;
+        }
+        /*p标签，且为父元素的倒数第3个子元素*/
+        p:nth-last-child(3){
+            background-image: url(img/1.jpeg);
+            height: 200px;
+            background-repeat: no-repeat;
+        }
+        .myul1 li:nth-last-child(1){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul class="myul1">
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>
+            列表3
+            <div>我是div</div>
+        </li>
+        <li>列表4</li>
+        <li>列表5</li>
+    </ul>
+    <div>我是div</div>
+    <p>我是p标签1</p>
+    <p>我是p标签2</p>
+    <p>我是p标签3</p>
+    <p>我是p标签4</p>
+    <p>我是p标签5</p>
+    <p>我是p标签6</p>
+    <span>我是span</span>
+</body>
+</html>

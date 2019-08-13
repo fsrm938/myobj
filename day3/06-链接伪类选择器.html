@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪类选择器</title>
+    <style>
+       a{
+           font-size: 40px;
+       }
+        
+        /* 未访问过的链接 */
+        a:link{
+            color: red;
+        }
+        
+        /* 访问后的链接样式 */
+        a:visited{
+            color: pink;
+        }
+        /* 鼠标移入后的样式 */
+        a:hover{
+            color: yellow;
+        }
+        /*选定的链接*/
+        a:active{
+            color: brown;
+        }
+        
+
+        /* a:hover必须写在 a:visited和a:link之后*/
+        /* a:active 必须在 a:hover 之后，需要严格按顺序才能看到效果 */
+        span:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">我是a标签1</a>
+    <a href="#">我是a标签2</a>
+    <a href="#">我是a标签3</a>
+    <a href="#">我是a标签4</a>
+    <a href="#">我是a标签5</a>
+
+    <span>我是span</span>
+</body>
+</html>

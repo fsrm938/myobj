@@ -1,0 +1,18 @@
+div{
+    color: blue !important;
+}
+.myclass{
+    color: aquamarine;
+}
+#myid{
+    color: purple;
+}
+*{
+    color: pink;
+}
+/* div.myclass{
+    color: chartreuse;
+} */
+p{
+    color: green;
+}

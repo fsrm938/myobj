@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*父元素第一个p元素*/ 
+        p:first-of-type{
+            text-align: center;
+        }
+        /*父元素最后一个p元素*/
+        p:last-of-type{
+            letter-spacing: 20px;
+        }
+        /*父元素倒数第2个p元素*/
+        p:nth-last-of-type(2){
+            color: red;
+        }
+        /*父元素第3个p元素*/
+        p:nth-of-type(3){
+            word-spacing: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="myul1">
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <li>列表4</li>
+        <li>列表5</li>
+    </ul>
+    <div>我是div</div>
+    <p>我是p标签1</p>
+    <p>我是p标签2</p>
+    <p>我是 p标签 3</p>
+    <p>我是p标签4</p>
+    <p>我是p标签5</p>
+    <p>我是p标签6</p>
+    <span>我是span</span>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多背景</title>
+    <style>
+        .mydiv{
+            width: 600px;
+            height: 400px;
+            background-image: url(./img/img_flwr.gif),url(./img/paper.gif);
+            background-repeat: no-repeat,repeat;
+            background-position: right bottom,0 0;
+        }
+        .mydiv2{
+            background-image: url(img/topfoot-spr.png);
+            width: 160px;
+            height: 40px;
+            background-position: -216px -42px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv">
+        <h1>Lorem Ipsum Dolor </h1>
+    </div>
+    <div class="mydiv2">我是div2</div>
+</body>
+</html>

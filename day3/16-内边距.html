@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>内边距</title>
+    <style>
+        .mydiv1{
+            width: 100px;
+            height: 30px;
+            border: 1px solid red;
+            /* 设置内边距 */
+            /* padding: 20px; */
+            /* padding: 10px 20px 30px 5px; */
+            /* padding: 10px 20px 30px; */
+            padding: 10px 20px;
+            /* 设置为IE盒模型  width = 内容+内边距+边框*/
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv1">我是div</div>
+</body>
+</html>

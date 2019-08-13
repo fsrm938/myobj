@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>边框</title>
+    <style>
+        .mydiv1{
+            /* border-width: 2px;
+            border-style: dashed;
+            border-color: red; */
+            /* border: 2px dashed red; */
+            border-bottom: 4px double gray;
+        }
+        table{
+            /*合并单元格的线*/ 
+            border-collapse: collapse;
+            border: 1px solid deeppink;
+        }
+        td {
+            border: 1px solid deeppink;
+        }
+        span{
+            display: inline-block;
+            width: 100px;
+            height: 30px;
+            border: 1px solid blue;
+            text-align: center;
+            line-height: 30px;
+            /* 设置圆角 */
+            /* border-radius: 15px; */
+            /* 左上  右上  右下  左下 */
+            /* border-radius: 5px 20px 15px 10px; */
+            border-radius: 0px 15px;
+        }
+        .mydiv2{
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            /* border-radius: 50px; */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="mydiv1">我是div</div>
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+        </tr>
+    </table>
+
+    <span>按钮</span>
+    <div class="mydiv2">圆</div>
+</body>
+</html>
